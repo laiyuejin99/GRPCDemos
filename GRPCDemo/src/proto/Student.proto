@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package com.jin.proto;
+
+option java_package = "com.jin.protocode";
+option java_outer_classname = "StudentProto";
+option java_multiple_files = true;
+
+service StudentSerivce {
+    //main
+    rpc GetRealName (MyRequest) returns (MyResponse) {
+    }
+
+    rpc GetStudentByAge (StudentRequest) returns (stream StudentResponse) {
+    }
+
+    rpc GetStudentAgeStream (stream StudentRequest) returns (StudentResponseList) {
+    }
+    //main
+    rpc StreamToStreamTalk (stream StreamRequest) returns (stream StreamResponse) {
+
+    }
+}
+//test1
+message MyRequest {
+    string username = 1;
+}
+
+message MyResponse {
+    string realname = 1;
+}
+//test2
+message StudentRequest {
+    int32 age = 1;
+}
+
+message StudentResponse {
+    string name = 1;
+    int32 age = 2;
+    string city = 3;
+}
+//test3  repeated mean a list data
+message StudentResponseList {
+    repeated StudentResponse studentResponse = 1;
+}
+//test 4
+message StreamRequest {
+    string requestInfo = 1;
+    int64 requestTime = 2;
+    string UUID = 3;
+}
+
+message StreamResponse {
+    string responseInfo = 1;
+    int64 receiveTime = 2;
+    string UUID = 3;
+}
