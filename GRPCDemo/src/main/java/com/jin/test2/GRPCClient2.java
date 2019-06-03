@@ -8,6 +8,9 @@ import io.grpc.ManagedChannelBuilder;
 
 import java.util.Iterator;
 
+/**
+ * request and stream response
+ */
 public class GRPCClient2 {
 
     public static void main(String[] args) {

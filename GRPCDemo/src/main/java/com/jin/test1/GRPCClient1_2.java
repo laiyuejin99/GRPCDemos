@@ -13,6 +13,9 @@ import io.reactivex.functions.Consumer;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * rxjava wrap1
+ */
 public class GRPCClient1_2 {
 
     public static void main(String[] args) {

@@ -10,6 +10,9 @@ import io.grpc.stub.StreamObserver;
 
 import java.util.function.Consumer;
 
+/**
+ * stream request and no-stream response
+ */
 public class GRPCClient3 {
 
     public static void main(String[] args) {

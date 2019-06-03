@@ -8,12 +8,11 @@ import io.grpc.stub.StreamObserver;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * stream request and stream response
+ */
 public class GRPCClient4_1 {
 
-//TLS  SSL (duration)
-//get request data size
-//get request object
-//set host name   (failover,redirection)
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("client start " + System.currentTimeMillis());

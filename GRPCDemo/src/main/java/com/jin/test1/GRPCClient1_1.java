@@ -9,6 +9,9 @@ import io.grpc.ManagedChannelBuilder;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * simple request and response demo
+ */
 public class GRPCClient1_1 {
 
     public static void main(String[] args) {
